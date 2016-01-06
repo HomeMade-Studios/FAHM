@@ -33,14 +33,25 @@ namespace Autobuyer_Fifa_16 {
 		public static void SetSearchParameters(int playerIndex) {
 			string name = Players.players[playerIndex].name;
 			string buyNow = Players.players[playerIndex].buyNow.ToString();
+            bool isSpecial = Players.players[playerIndex].isSpecial;
 
 			SimulateClickAtPosition(Coordinates.Coords["ResetPlayerName"], 1500);
-			SimulateDoubleClickAtPosition(Coordinates.Coords["PlayerName"], 1000);
+			SimulateDoubleClickAtPosition(Coordinates.Coords["PlayerName"], 2000);
 			Keyboard.Write(name);
 			Keyboard.PressEnter();
 			SimulateDoubleClickAtPosition(Coordinates.Coords["BuyNowMax"], 1000);
 			Keyboard.Write(buyNow);
-		}
+
+            SimulateClickAtPosition(Coordinates.Coords["CardQuality"], 1000);
+            if (isSpecial)
+            {
+                SimulateClickAtPosition(Coordinates.Coords["SpecialQuality"], 1000);
+            }
+            else
+            {
+                SimulateClickAtPosition(Coordinates.Coords["AnyQuality"], 1000);
+            }
+        }
 
 		public static void Search() {
 			SimulateClickAtPosition(Coordinates.Coords["Search"], 50);

@@ -27,7 +27,10 @@ namespace Autobuyer_Fifa_16 {
 			{ "ResetPlayerName",    new Ratio( 0.300000000000000, 0.401851851851852 ) },
 			{ "PlayerName",			new Ratio( 0.164062500000000, 0.402777777777778 ) },
 			{ "BuyNowMax",			new Ratio( 0.252604166666667, 0.828703703703704 ) },
-		};
+            { "CardQuality",        new Ratio( 0.48437500000000, 0.569444444444444 ) }, //
+            { "SpecialQuality",     new Ratio( 0.48437500000000, 0.777777777777778 ) }, //
+            { "AnyQuality",         new Ratio( 0.48437500000000, 0.602777777777778 ) }, //
+        };
 
 		static Dictionary<string, Ratio> coordsRatio1610 { get; } = new Dictionary<string, Ratio>() {	//16:10
 			{ "Search",             new Ratio( 0.284722222222222, 0.922222222222222 ) },
@@ -47,6 +50,10 @@ namespace Autobuyer_Fifa_16 {
 			{ "ResetPlayerName",    new Ratio( 0.300694444444444, 0.411111111111111 ) },
 			{ "PlayerName",         new Ratio( 0.160416666666667, 0.413333333333333 ) },
 			{ "BuyNowMax",          new Ratio( 0.254166666666667, 0.797777777777778 ) },
+            { "CardQuality",        new Ratio( 0.485119047619048, 0.557142857142857 ) }, //
+            { "SpecialQuality",     new Ratio( 0.485119047619048, 0.747619047619048 ) }, //
+            { "AnyQuality",         new Ratio( 0.485119047619048, 0.597142857142857 ) }, //
+
 		};
 
 		static Dictionary<string, Ratio> coordsRatio43 { get; } = new Dictionary<string, Ratio>() {		//4:3
@@ -67,6 +74,9 @@ namespace Autobuyer_Fifa_16 {
 			{ "ResetPlayerName",    new Ratio( 0.300714285714286, 0.426666666666667 ) },
 			{ "PlayerName",         new Ratio( 0.166428571428571, 0.428571428571429 ) },
 			{ "BuyNowMax",          new Ratio( 0.253571428571429, 0.744761904761905 ) },
+            { "CardQuality",        new Ratio( 0.484375000000000, 0.546875000000000 ) },
+            { "SpecialQuality",     new Ratio( 0.484375000000000, 0.693359375000000 ) },
+            { "AnyQuality",         new Ratio( 0.484375000000000, 0.573242187500000 ) },
 		};
 
 		public static Dictionary<string, Point> Coords { get; } = new Dictionary<string, Point>();
@@ -94,7 +104,10 @@ namespace Autobuyer_Fifa_16 {
 				Coords.Add("ResetPlayerName", Ratio.Multiply(screen, coordsRatio43["ResetPlayerName"]));
 				Coords.Add("PlayerName", Ratio.Multiply(screen, coordsRatio43["PlayerName"]));
 				Coords.Add("BuyNowMax", Ratio.Multiply(screen, coordsRatio43["BuyNowMax"]));
-				return 43;
+                Coords.Add("CardQuality", Ratio.Multiply(screen, coordsRatio43["CardQuality"]));
+                Coords.Add("SpecialQuality", Ratio.Multiply(screen, coordsRatio43["SpecialQuality"]));
+                Coords.Add("AnyQuality", Ratio.Multiply(screen, coordsRatio43["AnyQuality"]));
+                return 43;
 			}
 			if (nearest == formats[1]) {		// 16 : 10
 				Coords.Add("Search", Ratio.Multiply(screen, coordsRatio1610["Search"]));
@@ -114,7 +127,10 @@ namespace Autobuyer_Fifa_16 {
 				Coords.Add("ResetPlayerName", Ratio.Multiply(screen, coordsRatio1610["ResetPlayerName"]));
 				Coords.Add("PlayerName", Ratio.Multiply(screen, coordsRatio1610["PlayerName"]));
 				Coords.Add("BuyNowMax", Ratio.Multiply(screen, coordsRatio1610["BuyNowMax"]));
-				return 1610;
+                Coords.Add("CardQuality", Ratio.Multiply(screen, coordsRatio1610["CardQuality"]));
+                Coords.Add("SpecialQuality", Ratio.Multiply(screen, coordsRatio1610["SpecialQuality"]));
+                Coords.Add("AnyQuality", Ratio.Multiply(screen, coordsRatio1610["AnyQuality"]));
+                return 1610;
 			}
 			if (nearest == formats[2]){               // 16 : 9
 				Coords.Add("Search", Ratio.Multiply(screen, coordsRatio169["Search"]));
@@ -134,7 +150,10 @@ namespace Autobuyer_Fifa_16 {
 				Coords.Add("ResetPlayerName", Ratio.Multiply(screen, coordsRatio169["ResetPlayerName"]));
 				Coords.Add("PlayerName", Ratio.Multiply(screen, coordsRatio169["PlayerName"]));
 				Coords.Add("BuyNowMax", Ratio.Multiply(screen, coordsRatio169["BuyNowMax"]));
-				return 169;
+                Coords.Add("CardQuality", Ratio.Multiply(screen, coordsRatio169["CardQuality"]));
+                Coords.Add("SpecialQuality", Ratio.Multiply(screen, coordsRatio169["SpecialQuality"]));
+                Coords.Add("AnyQuality", Ratio.Multiply(screen, coordsRatio169["AnyQuality"]));
+                return 169;
 			}
 			return 0;
 		}

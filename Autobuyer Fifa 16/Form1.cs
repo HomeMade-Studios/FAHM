@@ -356,7 +356,7 @@ namespace Autobuyer_Fifa_16 {
 
 			int row = playersTablePanel.GetPositionFromControl((NumericUpDown)sender).Row;
 			int newEarn = Players.CalculateEarn(row, playersTablePanel);
-			Label earnLabel = playersTablePanel.GetControlFromPosition(4, row) as Label;
+			Label earnLabel = playersTablePanel.GetControlFromPosition(5, row) as Label;
 
 			if (newEarn < 0) {
 				earnLabel.Text = "- " + Math.Abs(newEarn).ToString("N0");
@@ -381,7 +381,8 @@ namespace Autobuyer_Fifa_16 {
 			playersTablePanel.GetControlFromPosition(1, row).Enabled = playerCheckBox.Checked;
 			playersTablePanel.GetControlFromPosition(2, row).Enabled = playerCheckBox.Checked;
 			playersTablePanel.GetControlFromPosition(3, row).Enabled = playerCheckBox.Checked;
-		}
+            playersTablePanel.GetControlFromPosition(4, row).Enabled = playerCheckBox.Checked;
+        }
 
 		private void usePlayerListCheckBox_CheckedChanged(object sender, EventArgs e) {
 			if (usePlayerListCheckBox.Checked) {
@@ -549,19 +550,27 @@ namespace Autobuyer_Fifa_16 {
 			Process.Start("https://www.easports.com/it/fifa/ultimate-team/web-app");
         }
 
-		private void logoutButton_Click(object sender, EventArgs e) {
-			if (Online && Config.loginEmail != "") {
-				int result = NetCommunication.ChangeAccountOnlineStatus(Config.loginEmail, false);
-                if (result == -2) {
-					MessageBox.Show("Unable to connect to server, check your connection", "Network Error", MessageBoxButtons.OK ,MessageBoxIcon.Error);
-				}
-				else {
-					Online = false;
-					loginStatusLabel.Text = "Offline";
-					loginPanel.Enabled = true;
-					logoutButton.Enabled = false;
-				}
-			}
-		}
-	}
+        private void donateLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://www.paypal.me/HomeMadeStudios");
+        }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            if (Online && Config.loginEmail != "")
+            {
+                int result = NetCommunication.ChangeAccountOnlineStatus(Config.loginEmail, false);
+                if (result == -2)
+                {
+                    MessageBox.Show("Unable to connect to server, check your connection", "Network Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else {
+                    Online = false;
+                    loginStatusLabel.Text = "Offline";
+                    loginPanel.Enabled = true;
+                    logoutButton.Enabled = false;
+                }
+            }
+        }        
+    }
 }

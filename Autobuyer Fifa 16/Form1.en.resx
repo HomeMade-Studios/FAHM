@@ -178,23 +178,68 @@
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Commands</value>
   </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 10</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
   <data name="label12.Text" xml:space="preserve">
     <value>Min profit</value>
   </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 10</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
   <data name="label9.Text" xml:space="preserve">
-    <value>Player</value>
+    <value>Player name</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 10</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>Buy now Max</value>
   </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 10</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
   <data name="label11.Text" xml:space="preserve">
     <value>Sell price</value>
+  </data>
+  <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 4</value>
+  </data>
+  <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 26</value>
+  </data>
+  <data name="label38.Text" xml:space="preserve">
+    <value>Special card</value>
+  </data>
+  <data name="label38.ToolTip" xml:space="preserve">
+    <value>Activate if you want to search a special card of this player (ex IF, MOTM ecc)</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 28</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>gianni</value>
+  </data>
+  <data name="mainTabControl.Padding" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="optionTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>422, 339</value>
+  </data>
+  <data name="optionTabPage.Text" xml:space="preserve">
+    <value>Settings</value>
   </data>
   <data name="groupBox3.Text" xml:space="preserve">
     <value>Language</value>
@@ -220,6 +265,9 @@
   <data name="screenRatioLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>146, 6</value>
   </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>After purchase</value>
+  </data>
   <data name="sendToTransferListRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 17</value>
   </data>
@@ -232,20 +280,14 @@
   <data name="sellPlayersRadioButton.Text" xml:space="preserve">
     <value>Sell ( use "Player" list price )</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>After purchase</value>
-  </data>
-  <data name="optionTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>422, 339</value>
-  </data>
-  <data name="optionTabPage.Text" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="playersGridPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>422, 339</value>
-  </data>
   <data name="playersGridPage.Text" xml:space="preserve">
     <value>Players</value>
+  </data>
+  <data name="statsTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>422, 339</value>
+  </data>
+  <data name="statsTabPage.Text" xml:space="preserve">
+    <value>Statistics</value>
   </data>
   <data name="playersLostLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 80</value>
@@ -316,11 +358,11 @@
   <data name="currentPlayerLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 100</value>
   </data>
-  <data name="statsTabPage.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
     <value>422, 339</value>
   </data>
-  <data name="statsTabPage.Text" xml:space="preserve">
-    <value>Statistics</value>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Instructions</value>
   </data>
   <data name="label37.Text" xml:space="preserve">
     <value>- Compile players list
@@ -339,11 +381,8 @@
 
 - To stop searching press Ctrl + S again</value>
   </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="loginTabPage.Size" type="System.Drawing.Size, System.Drawing">
     <value>422, 339</value>
-  </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Instructions</value>
   </data>
   <data name="loginStatusLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>152, 256</value>
@@ -373,7 +412,7 @@
   <data name="label7.Text" xml:space="preserve">
     <value>To use the program you need to login with your account's data ( account created on our site, NOT Fifa account).</value>
   </data>
-  <data name="loginTabPage.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="updateLogTabPage.Size" type="System.Drawing.Size, System.Drawing">
     <value>422, 339</value>
   </data>
   <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
@@ -385,15 +424,6 @@
 - Application now save search settings
 - English language
 - Fixed Logout problems</value>
-  </data>
-  <data name="updateLogTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>422, 339</value>
-  </data>
-  <data name="mainTabControl.Padding" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="mainTabControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>430, 365</value>
   </data>
   <data name="manualUpdateLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>216, 0</value>
@@ -421,6 +451,9 @@
   </data>
   <data name="webAppLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>158, 0</value>
+  </data>
+  <data name="donateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 0</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
