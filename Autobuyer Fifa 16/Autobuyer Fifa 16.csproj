@@ -60,7 +60,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup />
@@ -183,7 +184,9 @@
     </Compile>
     <None Include="Fifa16Autobuyer.pfx" />
     <None Include="packages.config" />
-    <None Include="Properties\AutobuyerFifa16.manifest" />
+    <None Include="Properties\AutobuyerFifa16.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

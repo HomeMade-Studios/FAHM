@@ -63,7 +63,7 @@ namespace AutobuyerFifa16 {
 			
 			bundleVersionLabel.Text = Application.ProductVersion;
 
-			NetCommunication.CheckUpdate();
+			NetCommunication.CheckUpdate(true);
 
 			int control = NetCommunication.CheckBetaEnd();
 			if (control == 0) { MessageBox.Show("Hi Tester, remember that this is a Beta. Please contact facebook page for any problem.", "Open Beta", MessageBoxButtons.OK, MessageBoxIcon.Information); Online = true; loginStatusLabel.Text = "Online ( BETA TEST )"; }
@@ -527,7 +527,7 @@ namespace AutobuyerFifa16 {
 		}
 
 		private void ManualUpdate_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
-			NetCommunication.CheckUpdate();
+			NetCommunication.CheckUpdate(false);
 		}
 
 		private void facebookLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {

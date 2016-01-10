@@ -122,7 +122,7 @@
 			this.Name = "Form1";
 			this.ShowIcon = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Troder Installer";
+			this.Text = "Fifa16 Autobuyer Installer";
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

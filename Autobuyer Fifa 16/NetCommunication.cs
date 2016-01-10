@@ -120,7 +120,7 @@ namespace AutobuyerFifa16 {
 			}
 		}
 
-		public static string CheckUpdate(bool calledInStart = false) {
+		public static string CheckUpdate(bool calledInStart) {
 			WebClient webClient = new WebClient();
 			Stream response = webClient.OpenRead("http://54.171.191.32//autobuyerFifa16Version.php");
 			StreamReader read = new StreamReader(response);
@@ -135,13 +135,10 @@ namespace AutobuyerFifa16 {
 						UpdateApplication();
 					}
 				}
-				else {
-					if (calledInStart)
-						MessageBox.Show("You're running the version: " + Application.ProductVersion, "Update No Available", MessageBoxButtons.OK, MessageBoxIcon.Information);
-				}
 			}
 
-			
+			if (!calledInStart)
+				MessageBox.Show("You're running the version: " + Application.ProductVersion, "Update No Available", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 			return lastVer;
 		}
@@ -152,9 +149,11 @@ namespace AutobuyerFifa16 {
 
 			Process process = new Process();
 
-			File.CreateText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "AutobuyerFifa16", "updateRequired.txt"));
+			using (StreamWriter sw = new StreamWriter(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "AutobuyerFifa16", "updateRequired.txt"), true)) {
+				sw.Close();
+			}
 
-			process.StartInfo.FileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "AutobuyerFifa16", "Autobuyer Fifa 16 Installer.exe");
+			process.StartInfo.FileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "AutobuyerFifa16", "AutobuyerFifa16Installer.exe");
 
 			process.Start();
 
