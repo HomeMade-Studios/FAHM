@@ -4,8 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Autobuyer_Fifa_16
-{
+namespace AutobuyerFifa16 {
     static class Program
     {
         /// <summary>

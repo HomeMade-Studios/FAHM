@@ -12,7 +12,7 @@ using System.IO;
 using Ini;
 using System.Deployment.Application;
 
-namespace Autobuyer_Fifa_16 {
+namespace AutobuyerFifa16 {
 	public partial class Form1 : Form {
 
 		[DllImport("user32.dll")]
@@ -54,7 +54,7 @@ namespace Autobuyer_Fifa_16 {
 
 			Thread.CurrentThread.CurrentCulture = new CultureInfo(Config.language);
 			Thread.CurrentThread.CurrentUICulture = new CultureInfo(Config.language);
-			
+
 			InitializeComponent();
 			RegisterHotKey(Handle, STARTSTOP_HOTKEY_ID, 2, (int)Keys.S);
 		}
@@ -136,6 +136,10 @@ namespace Autobuyer_Fifa_16 {
 						return false;
 					}
 				}
+				//else if(MessageBox.Show("Remember to set search settings on web app if you are not using player list.", "Manual search settings selected", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
+				//{
+				//    return false;
+				//}
 				return true;
 			}
 			else {
@@ -206,12 +210,14 @@ namespace Autobuyer_Fifa_16 {
 							Pause();
 							Stats.searchTime.Start();
 
-							Config.currentPlayerIndex++;
-							if (Config.currentPlayerIndex == Players.players.Count)
-								Config.currentPlayerIndex = 0;
+							if (Config.work) {
+								Config.currentPlayerIndex++;
+								if (Config.currentPlayerIndex == Players.players.Count)
+									Config.currentPlayerIndex = 0;
 
-							SearchOperations.BackToMarket();
-							Thread.Sleep(1000);
+								SearchOperations.BackToMarket();
+								Thread.Sleep(1000);
+							}
 
 							currentState = SETTING;
 							break;
@@ -259,7 +265,7 @@ namespace Autobuyer_Fifa_16 {
 							break;
 
 						case PAUSE:                 //PAUSE
-							SetStatus("Pause {0}s remaining", Config.remainingPauseSecond);
+							SetStatus("Pause {0}s", Config.remainingPauseSecond);
 
 							break;
 
@@ -381,16 +387,18 @@ namespace Autobuyer_Fifa_16 {
 			playersTablePanel.GetControlFromPosition(1, row).Enabled = playerCheckBox.Checked;
 			playersTablePanel.GetControlFromPosition(2, row).Enabled = playerCheckBox.Checked;
 			playersTablePanel.GetControlFromPosition(3, row).Enabled = playerCheckBox.Checked;
-            playersTablePanel.GetControlFromPosition(4, row).Enabled = playerCheckBox.Checked;
-        }
+			playersTablePanel.GetControlFromPosition(4, row).Enabled = playerCheckBox.Checked;
+		}
 
 		private void usePlayerListCheckBox_CheckedChanged(object sender, EventArgs e) {
 			if (usePlayerListCheckBox.Checked) {
 				sellPlayersRadioButton.Enabled = true;
+				usePlayerListCheckBox.ForeColor = SystemColors.ControlText;
 			}
 			else {
 				sellPlayersRadioButton.Enabled = false;
-				sendToTransferListRadioButton.PerformClick();
+				sendToTransferListRadioButton.Checked = true;
+				usePlayerListCheckBox.ForeColor = Color.OrangeRed;
 			}
 		}
 
@@ -403,7 +411,7 @@ namespace Autobuyer_Fifa_16 {
 				return;
 			}
 			if (email == "") {
-				MessageBox.Show("Write an email.", "Email Error", MessageBoxButtons.OK ,MessageBoxIcon.Error);
+				MessageBox.Show("Write an email.", "Email Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
 			if (pass == "") {
@@ -548,29 +556,25 @@ namespace Autobuyer_Fifa_16 {
 
 		private void webAppLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
 			Process.Start("https://www.easports.com/it/fifa/ultimate-team/web-app");
-        }
+		}
 
-        private void donateLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("https://www.paypal.me/HomeMadeStudios");
-        }
+		private void donateLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
+			Process.Start("https://www.paypal.me/HomeMadeStudios");
+		}
 
-        private void logoutButton_Click(object sender, EventArgs e)
-        {
-            if (Online && Config.loginEmail != "")
-            {
-                int result = NetCommunication.ChangeAccountOnlineStatus(Config.loginEmail, false);
-                if (result == -2)
-                {
-                    MessageBox.Show("Unable to connect to server, check your connection", "Network Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else {
-                    Online = false;
-                    loginStatusLabel.Text = "Offline";
-                    loginPanel.Enabled = true;
-                    logoutButton.Enabled = false;
-                }
-            }
-        }        
-    }
+		private void logoutButton_Click(object sender, EventArgs e) {
+			if (Online && Config.loginEmail != "") {
+				int result = NetCommunication.ChangeAccountOnlineStatus(Config.loginEmail, false);
+				if (result == -2) {
+					MessageBox.Show("Unable to connect to server, check your connection", "Network Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
+				else {
+					Online = false;
+					loginStatusLabel.Text = "Offline";
+					loginPanel.Enabled = true;
+					logoutButton.Enabled = false;
+				}
+			}
+		}
+	}
 }

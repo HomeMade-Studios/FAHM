@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Diagnostics;
 
-namespace Autobuyer_Fifa_16 {
+namespace AutobuyerFifa16 {
 	public static class SearchOperations {
 
 		private const int MOUSEEVENTF_LEFTDOWN = 0x02;
