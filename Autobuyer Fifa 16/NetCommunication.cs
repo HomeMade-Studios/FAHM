@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Security.Cryptography;
 using System.Text;
+using System.Windows.Forms;
 
-namespace Autobuyer_Fifa_16 {
+namespace AutobuyerFifa16 {
 	public static class NetCommunication {
 
 		public static int CheckBetaEnd() { 
@@ -116,6 +118,57 @@ namespace Autobuyer_Fifa_16 {
 				}
 				return -2;
 			}
+		}
+
+		public static string CheckUpdate(bool calledInStart = false) {
+			WebClient webClient = new WebClient();
+			Stream response = webClient.OpenRead("http://54.171.191.32//autobuyerFifa16Version.php");
+			StreamReader read = new StreamReader(response);
+			string lastVer = read.ReadToEnd();
+			string appVer = Application.ProductVersion;
+			int[] lastVerInt = getVersionInt(lastVer);
+			int[] versAppInt = getVersionInt(appVer);
+
+			for (int i = 0; i < versAppInt.Count(); i++) {
+				if (versAppInt[i] < lastVerInt[i]) {
+					if (MessageBox.Show("Last released version is " + lastVer + ". Do you want to update?", "Update Available", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes) {
+						UpdateApplication();
+					}
+				}
+				else {
+					if (calledInStart)
+						MessageBox.Show("You're running the version: " + Application.ProductVersion, "Update No Available", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				}
+			}
+
+			
+
+			return lastVer;
+		}
+
+		public static void UpdateApplication() {
+
+			string installDirectory = Directory.GetCurrentDirectory();
+
+			Process process = new Process();
+
+			File.CreateText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "AutobuyerFifa16", "updateRequired.txt"));
+
+			process.StartInfo.FileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "AutobuyerFifa16", "Autobuyer Fifa 16 Installer.exe");
+
+			process.Start();
+
+			Application.Exit();
+
+		}
+
+		private static int[] getVersionInt(string verStr) {
+			int[] ver = new int[4];
+			string[] verStrArr = verStr.Split('.');
+			for (int i = 0; i < verStrArr.Count(); i++) {
+				ver[i] = Convert.ToInt32(verStrArr[i]);
+			}
+			return ver;
 		}
 	}
 }

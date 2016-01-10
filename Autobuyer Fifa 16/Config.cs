@@ -6,7 +6,7 @@ using System.Text;
 using System.IO;
 using Ini;
 
-namespace Autobuyer_Fifa_16 {
+namespace AutobuyerFifa16 {
 	public static class Config {
 
 		public static IniFile iniFile;

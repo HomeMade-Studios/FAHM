@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
-namespace Autobuyer_Fifa_16 {
+namespace AutobuyerFifa16 {
 	public static class Players {
 
 		public static List<Player> players { get; } = new List<Player>();

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Drawing;
-using Autobuyer_Fifa_16;
+using AutobuyerFifa16;
 using System.Windows.Forms;
 using System.Threading;
 using System.Diagnostics;

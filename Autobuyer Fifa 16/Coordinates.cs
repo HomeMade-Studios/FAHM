@@ -5,7 +5,7 @@ using System.Text;
 using System.Drawing;
 using MoreLinq;
 
-namespace Autobuyer_Fifa_16 {
+namespace AutobuyerFifa16 {
 
 	public static class Coordinates {
 

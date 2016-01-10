@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Diagnostics;
-using Autobuyer_Fifa_16;
+using AutobuyerFifa16;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Globalization;
@@ -60,10 +60,10 @@ namespace AutobuyerFifa16 {
 		}
 
 		private void Form1_Load(object sender, EventArgs e) {       //LOAD
+			
+			bundleVersionLabel.Text = Application.ProductVersion;
 
-			if (ApplicationDeployment.IsNetworkDeployed) {
-				bundleVersionLabel.Text = ApplicationDeployment.CurrentDeployment.CurrentVersion.ToString();
-			}
+			NetCommunication.CheckUpdate();
 
 			int control = NetCommunication.CheckBetaEnd();
 			if (control == 0) { MessageBox.Show("Hi Tester, remember that this is a Beta. Please contact facebook page for any problem.", "Open Beta", MessageBoxButtons.OK, MessageBoxIcon.Information); Online = true; loginStatusLabel.Text = "Online ( BETA TEST )"; }
@@ -136,10 +136,6 @@ namespace AutobuyerFifa16 {
 						return false;
 					}
 				}
-				//else if(MessageBox.Show("Remember to set search settings on web app if you are not using player list.", "Manual search settings selected", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
-				//{
-				//    return false;
-				//}
 				return true;
 			}
 			else {
@@ -531,19 +527,7 @@ namespace AutobuyerFifa16 {
 		}
 
 		private void ManualUpdate_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
-			if (ApplicationDeployment.IsNetworkDeployed) {
-				ApplicationDeployment updateCheck = ApplicationDeployment.CurrentDeployment;
-				UpdateCheckInfo info = updateCheck.CheckForDetailedUpdate();
-
-				if (info.UpdateAvailable) {
-					updateCheck.Update();
-					MessageBox.Show("The application has been upgraded, please restart application.");
-					this.Close();
-				}
-				else {
-					MessageBox.Show("This is the latest version.");
-				}
-			}
+			NetCommunication.CheckUpdate();
 		}
 
 		private void facebookLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {

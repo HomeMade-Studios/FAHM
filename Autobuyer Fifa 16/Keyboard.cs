@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading;
 using WindowsInput;
 
-namespace Autobuyer_Fifa_16 {
+namespace AutobuyerFifa16 {
 	public static class Keyboard {
 
 		static InputSimulator input = new InputSimulator();

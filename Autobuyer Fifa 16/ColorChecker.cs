@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 
-namespace Autobuyer_Fifa_16 {
+namespace AutobuyerFifa16 {
 	class ColorChecker {
 
 		public struct ColorPoint {
