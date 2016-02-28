@@ -96,12 +96,15 @@ namespace AutobuyerFifa16 {
 
 			ReadConfig();
 
-			loginEmailTextBox.Text = Properties.Settings.Default.Email;
-			loginPasswordTextBox.Text = Properties.Settings.Default.Password;
-
+			try {
+				loginEmailTextBox.Text = Properties.Settings.Default.Email;
+				loginPasswordTextBox.Text = Properties.Settings.Default.Password;
+			}
+			catch (Exception) { }
+			
 			searcherBW.RunWorkerAsync();
 			statsBW.RunWorkerAsync();
-
+			
 		}
 
 		protected override void WndProc(ref Message m) {

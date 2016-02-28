@@ -215,6 +215,7 @@
 			// 
 			// settingsGroupBox
 			// 
+			resources.ApplyResources(this.settingsGroupBox, "settingsGroupBox");
 			this.settingsGroupBox.Controls.Add(this.transferTargetEachSearch);
 			this.settingsGroupBox.Controls.Add(this.pauseCheckBox);
 			this.settingsGroupBox.Controls.Add(this.pauseSecondsNumericBox);
@@ -226,9 +227,9 @@
 			this.settingsGroupBox.Controls.Add(this.pauseAttemptsNumericBox);
 			this.settingsGroupBox.Controls.Add(this.label5);
 			this.settingsGroupBox.Controls.Add(this.attemptsNumericBox);
-			resources.ApplyResources(this.settingsGroupBox, "settingsGroupBox");
 			this.settingsGroupBox.Name = "settingsGroupBox";
 			this.settingsGroupBox.TabStop = false;
+			this.toolTip.SetToolTip(this.settingsGroupBox, resources.GetString("settingsGroupBox.ToolTip"));
 			// 
 			// transferTargetEachSearch
 			// 
@@ -245,6 +246,7 @@
 			this.pauseCheckBox.Checked = true;
 			this.pauseCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
 			this.pauseCheckBox.Name = "pauseCheckBox";
+			this.toolTip.SetToolTip(this.pauseCheckBox, resources.GetString("pauseCheckBox.ToolTip"));
 			this.pauseCheckBox.UseVisualStyleBackColor = true;
 			// 
 			// pauseSecondsNumericBox
@@ -261,6 +263,7 @@
             0,
             0});
 			this.pauseSecondsNumericBox.Name = "pauseSecondsNumericBox";
+			this.toolTip.SetToolTip(this.pauseSecondsNumericBox, resources.GetString("pauseSecondsNumericBox.ToolTip"));
 			this.pauseSecondsNumericBox.Value = new decimal(new int[] {
             10,
             0,
@@ -281,16 +284,19 @@
 			// 
 			resources.ApplyResources(this.label1, "label1");
 			this.label1.Name = "label1";
+			this.toolTip.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
 			// 
 			// label8
 			// 
 			resources.ApplyResources(this.label8, "label8");
 			this.label8.Name = "label8";
+			this.toolTip.SetToolTip(this.label8, resources.GetString("label8.ToolTip"));
 			// 
 			// label2
 			// 
 			resources.ApplyResources(this.label2, "label2");
 			this.label2.Name = "label2";
+			this.toolTip.SetToolTip(this.label2, resources.GetString("label2.ToolTip"));
 			// 
 			// delayBeforeNextSearchNumericBox
 			// 
@@ -301,6 +307,7 @@
             0,
             0});
 			this.delayBeforeNextSearchNumericBox.Name = "delayBeforeNextSearchNumericBox";
+			this.toolTip.SetToolTip(this.delayBeforeNextSearchNumericBox, resources.GetString("delayBeforeNextSearchNumericBox.ToolTip"));
 			this.delayBeforeNextSearchNumericBox.Value = new decimal(new int[] {
             1,
             0,
@@ -321,6 +328,7 @@
             0,
             0});
 			this.pauseAttemptsNumericBox.Name = "pauseAttemptsNumericBox";
+			this.toolTip.SetToolTip(this.pauseAttemptsNumericBox, resources.GetString("pauseAttemptsNumericBox.ToolTip"));
 			this.pauseAttemptsNumericBox.Value = new decimal(new int[] {
             25,
             0,
@@ -331,6 +339,7 @@
 			// 
 			resources.ApplyResources(this.label5, "label5");
 			this.label5.Name = "label5";
+			this.toolTip.SetToolTip(this.label5, resources.GetString("label5.ToolTip"));
 			// 
 			// attemptsNumericBox
 			// 
@@ -341,6 +350,7 @@
             0,
             0});
 			this.attemptsNumericBox.Name = "attemptsNumericBox";
+			this.toolTip.SetToolTip(this.attemptsNumericBox, resources.GetString("attemptsNumericBox.ToolTip"));
 			// 
 			// searcherBW
 			// 
@@ -350,16 +360,18 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.label3);
 			resources.ApplyResources(this.groupBox1, "groupBox1");
+			this.groupBox1.Controls.Add(this.label3);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.TabStop = false;
+			this.toolTip.SetToolTip(this.groupBox1, resources.GetString("groupBox1.ToolTip"));
 			// 
 			// label3
 			// 
 			resources.ApplyResources(this.label3, "label3");
 			this.label3.Cursor = System.Windows.Forms.Cursors.Default;
 			this.label3.Name = "label3";
+			this.toolTip.SetToolTip(this.label3, resources.GetString("label3.ToolTip"));
 			// 
 			// toolTip
 			// 
@@ -405,23 +417,26 @@
 			// 
 			resources.ApplyResources(this.button1, "button1");
 			this.button1.Name = "button1";
+			this.toolTip.SetToolTip(this.button1, resources.GetString("button1.ToolTip"));
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// mainTabControl
 			// 
+			resources.ApplyResources(this.mainTabControl, "mainTabControl");
 			this.mainTabControl.Controls.Add(this.optionTabPage);
 			this.mainTabControl.Controls.Add(this.playersGridPage);
 			this.mainTabControl.Controls.Add(this.statsTabPage);
 			this.mainTabControl.Controls.Add(this.tabPage1);
 			this.mainTabControl.Controls.Add(this.loginTabPage);
 			this.mainTabControl.Controls.Add(this.updateLogTabPage);
-			resources.ApplyResources(this.mainTabControl, "mainTabControl");
 			this.mainTabControl.Name = "mainTabControl";
 			this.mainTabControl.SelectedIndex = 0;
+			this.toolTip.SetToolTip(this.mainTabControl, resources.GetString("mainTabControl.ToolTip"));
 			// 
 			// optionTabPage
 			// 
+			resources.ApplyResources(this.optionTabPage, "optionTabPage");
 			this.optionTabPage.BackColor = System.Drawing.SystemColors.Control;
 			this.optionTabPage.Controls.Add(this.groupBox3);
 			this.optionTabPage.Controls.Add(this.tableLayoutPanel3);
@@ -429,21 +444,23 @@
 			this.optionTabPage.Controls.Add(this.groupBox2);
 			this.optionTabPage.Controls.Add(this.button1);
 			this.optionTabPage.Controls.Add(this.groupBox1);
-			resources.ApplyResources(this.optionTabPage, "optionTabPage");
 			this.optionTabPage.Name = "optionTabPage";
+			this.toolTip.SetToolTip(this.optionTabPage, resources.GetString("optionTabPage.ToolTip"));
 			// 
 			// groupBox3
 			// 
+			resources.ApplyResources(this.groupBox3, "groupBox3");
 			this.groupBox3.Controls.Add(this.languageEngRadioButton);
 			this.groupBox3.Controls.Add(this.languageItaRadioButton);
-			resources.ApplyResources(this.groupBox3, "groupBox3");
 			this.groupBox3.Name = "groupBox3";
 			this.groupBox3.TabStop = false;
+			this.toolTip.SetToolTip(this.groupBox3, resources.GetString("groupBox3.ToolTip"));
 			// 
 			// languageEngRadioButton
 			// 
 			resources.ApplyResources(this.languageEngRadioButton, "languageEngRadioButton");
 			this.languageEngRadioButton.Name = "languageEngRadioButton";
+			this.toolTip.SetToolTip(this.languageEngRadioButton, resources.GetString("languageEngRadioButton.ToolTip"));
 			this.languageEngRadioButton.UseVisualStyleBackColor = true;
 			this.languageEngRadioButton.Click += new System.EventHandler(this.Translate);
 			// 
@@ -453,6 +470,7 @@
 			this.languageItaRadioButton.Checked = true;
 			this.languageItaRadioButton.Name = "languageItaRadioButton";
 			this.languageItaRadioButton.TabStop = true;
+			this.toolTip.SetToolTip(this.languageItaRadioButton, resources.GetString("languageItaRadioButton.ToolTip"));
 			this.languageItaRadioButton.UseVisualStyleBackColor = true;
 			this.languageItaRadioButton.Click += new System.EventHandler(this.Translate);
 			// 
@@ -464,39 +482,46 @@
 			this.tableLayoutPanel3.Controls.Add(this.label25, 2, 0);
 			this.tableLayoutPanel3.Controls.Add(this.screenRatioLabel, 3, 0);
 			this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+			this.toolTip.SetToolTip(this.tableLayoutPanel3, resources.GetString("tableLayoutPanel3.ToolTip"));
 			// 
 			// label24
 			// 
 			resources.ApplyResources(this.label24, "label24");
 			this.label24.Name = "label24";
+			this.toolTip.SetToolTip(this.label24, resources.GetString("label24.ToolTip"));
 			// 
 			// screenResolutionLabel
 			// 
 			resources.ApplyResources(this.screenResolutionLabel, "screenResolutionLabel");
 			this.screenResolutionLabel.Name = "screenResolutionLabel";
+			this.toolTip.SetToolTip(this.screenResolutionLabel, resources.GetString("screenResolutionLabel.ToolTip"));
 			// 
 			// label25
 			// 
 			resources.ApplyResources(this.label25, "label25");
 			this.label25.Name = "label25";
+			this.toolTip.SetToolTip(this.label25, resources.GetString("label25.ToolTip"));
 			// 
 			// screenRatioLabel
 			// 
 			resources.ApplyResources(this.screenRatioLabel, "screenRatioLabel");
 			this.screenRatioLabel.Name = "screenRatioLabel";
+			this.toolTip.SetToolTip(this.screenRatioLabel, resources.GetString("screenRatioLabel.ToolTip"));
 			// 
 			// groupBox2
 			// 
+			resources.ApplyResources(this.groupBox2, "groupBox2");
 			this.groupBox2.Controls.Add(this.sendToTransferListRadioButton);
 			this.groupBox2.Controls.Add(this.sellPlayersRadioButton);
-			resources.ApplyResources(this.groupBox2, "groupBox2");
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.TabStop = false;
+			this.toolTip.SetToolTip(this.groupBox2, resources.GetString("groupBox2.ToolTip"));
 			// 
 			// sendToTransferListRadioButton
 			// 
 			resources.ApplyResources(this.sendToTransferListRadioButton, "sendToTransferListRadioButton");
 			this.sendToTransferListRadioButton.Name = "sendToTransferListRadioButton";
+			this.toolTip.SetToolTip(this.sendToTransferListRadioButton, resources.GetString("sendToTransferListRadioButton.ToolTip"));
 			this.sendToTransferListRadioButton.UseVisualStyleBackColor = true;
 			// 
 			// sellPlayersRadioButton
@@ -505,21 +530,24 @@
 			this.sellPlayersRadioButton.Checked = true;
 			this.sellPlayersRadioButton.Name = "sellPlayersRadioButton";
 			this.sellPlayersRadioButton.TabStop = true;
+			this.toolTip.SetToolTip(this.sellPlayersRadioButton, resources.GetString("sellPlayersRadioButton.ToolTip"));
 			this.sellPlayersRadioButton.UseVisualStyleBackColor = true;
 			// 
 			// playersGridPage
 			// 
+			resources.ApplyResources(this.playersGridPage, "playersGridPage");
 			this.playersGridPage.BackColor = System.Drawing.SystemColors.Control;
 			this.playersGridPage.Controls.Add(this.loadPlayersButton);
 			this.playersGridPage.Controls.Add(this.savePlayersButton);
 			this.playersGridPage.Controls.Add(this.playersTablePanel);
-			resources.ApplyResources(this.playersGridPage, "playersGridPage");
 			this.playersGridPage.Name = "playersGridPage";
+			this.toolTip.SetToolTip(this.playersGridPage, resources.GetString("playersGridPage.ToolTip"));
 			// 
 			// loadPlayersButton
 			// 
 			resources.ApplyResources(this.loadPlayersButton, "loadPlayersButton");
 			this.loadPlayersButton.Name = "loadPlayersButton";
+			this.toolTip.SetToolTip(this.loadPlayersButton, resources.GetString("loadPlayersButton.ToolTip"));
 			this.loadPlayersButton.UseVisualStyleBackColor = true;
 			this.loadPlayersButton.Click += new System.EventHandler(this.loadPlayersButton_Click);
 			// 
@@ -527,6 +555,7 @@
 			// 
 			resources.ApplyResources(this.savePlayersButton, "savePlayersButton");
 			this.savePlayersButton.Name = "savePlayersButton";
+			this.toolTip.SetToolTip(this.savePlayersButton, resources.GetString("savePlayersButton.ToolTip"));
 			this.savePlayersButton.UseVisualStyleBackColor = true;
 			this.savePlayersButton.Click += new System.EventHandler(this.savePlayersButton_Click);
 			// 
@@ -601,17 +630,20 @@
 			this.playersTablePanel.Controls.Add(this.label10, 3, 0);
 			this.playersTablePanel.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
 			this.playersTablePanel.Name = "playersTablePanel";
+			this.toolTip.SetToolTip(this.playersTablePanel, resources.GetString("playersTablePanel.ToolTip"));
 			// 
 			// checkBox19
 			// 
 			resources.ApplyResources(this.checkBox19, "checkBox19");
 			this.checkBox19.Name = "checkBox19";
+			this.toolTip.SetToolTip(this.checkBox19, resources.GetString("checkBox19.ToolTip"));
 			this.checkBox19.UseVisualStyleBackColor = true;
 			// 
 			// textBox10
 			// 
 			resources.ApplyResources(this.textBox10, "textBox10");
 			this.textBox10.Name = "textBox10";
+			this.toolTip.SetToolTip(this.textBox10, resources.GetString("textBox10.ToolTip"));
 			// 
 			// numericUpDown15
 			// 
@@ -627,42 +659,50 @@
             0,
             0});
 			this.numericUpDown15.Name = "numericUpDown15";
+			this.toolTip.SetToolTip(this.numericUpDown15, resources.GetString("numericUpDown15.ToolTip"));
 			this.numericUpDown15.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// label21
 			// 
 			resources.ApplyResources(this.label21, "label21");
 			this.label21.Name = "label21";
+			this.toolTip.SetToolTip(this.label21, resources.GetString("label21.ToolTip"));
 			// 
 			// label20
 			// 
 			resources.ApplyResources(this.label20, "label20");
 			this.label20.Name = "label20";
+			this.toolTip.SetToolTip(this.label20, resources.GetString("label20.ToolTip"));
 			// 
 			// label19
 			// 
 			resources.ApplyResources(this.label19, "label19");
 			this.label19.Name = "label19";
+			this.toolTip.SetToolTip(this.label19, resources.GetString("label19.ToolTip"));
 			// 
 			// label18
 			// 
 			resources.ApplyResources(this.label18, "label18");
 			this.label18.Name = "label18";
+			this.toolTip.SetToolTip(this.label18, resources.GetString("label18.ToolTip"));
 			// 
 			// label17
 			// 
 			resources.ApplyResources(this.label17, "label17");
 			this.label17.Name = "label17";
+			this.toolTip.SetToolTip(this.label17, resources.GetString("label17.ToolTip"));
 			// 
 			// label16
 			// 
 			resources.ApplyResources(this.label16, "label16");
 			this.label16.Name = "label16";
+			this.toolTip.SetToolTip(this.label16, resources.GetString("label16.ToolTip"));
 			// 
 			// label15
 			// 
 			resources.ApplyResources(this.label15, "label15");
 			this.label15.Name = "label15";
+			this.toolTip.SetToolTip(this.label15, resources.GetString("label15.ToolTip"));
 			// 
 			// numericUpDown6
 			// 
@@ -678,12 +718,14 @@
             0,
             0});
 			this.numericUpDown6.Name = "numericUpDown6";
+			this.toolTip.SetToolTip(this.numericUpDown6, resources.GetString("numericUpDown6.ToolTip"));
 			this.numericUpDown6.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// textBox1
 			// 
 			resources.ApplyResources(this.textBox1, "textBox1");
 			this.textBox1.Name = "textBox1";
+			this.toolTip.SetToolTip(this.textBox1, resources.GetString("textBox1.ToolTip"));
 			// 
 			// numericUpDown2
 			// 
@@ -699,17 +741,20 @@
             0,
             0});
 			this.numericUpDown2.Name = "numericUpDown2";
+			this.toolTip.SetToolTip(this.numericUpDown2, resources.GetString("numericUpDown2.ToolTip"));
 			this.numericUpDown2.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// label13
 			// 
 			resources.ApplyResources(this.label13, "label13");
 			this.label13.Name = "label13";
+			this.toolTip.SetToolTip(this.label13, resources.GetString("label13.ToolTip"));
 			// 
 			// textBox2
 			// 
 			resources.ApplyResources(this.textBox2, "textBox2");
 			this.textBox2.Name = "textBox2";
+			this.toolTip.SetToolTip(this.textBox2, resources.GetString("textBox2.ToolTip"));
 			// 
 			// numericUpDown4
 			// 
@@ -725,42 +770,50 @@
             0,
             0});
 			this.numericUpDown4.Name = "numericUpDown4";
+			this.toolTip.SetToolTip(this.numericUpDown4, resources.GetString("numericUpDown4.ToolTip"));
 			this.numericUpDown4.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// label14
 			// 
 			resources.ApplyResources(this.label14, "label14");
 			this.label14.Name = "label14";
+			this.toolTip.SetToolTip(this.label14, resources.GetString("label14.ToolTip"));
 			// 
 			// textBox3
 			// 
 			resources.ApplyResources(this.textBox3, "textBox3");
 			this.textBox3.Name = "textBox3";
+			this.toolTip.SetToolTip(this.textBox3, resources.GetString("textBox3.ToolTip"));
 			// 
 			// textBox4
 			// 
 			resources.ApplyResources(this.textBox4, "textBox4");
 			this.textBox4.Name = "textBox4";
+			this.toolTip.SetToolTip(this.textBox4, resources.GetString("textBox4.ToolTip"));
 			// 
 			// textBox5
 			// 
 			resources.ApplyResources(this.textBox5, "textBox5");
 			this.textBox5.Name = "textBox5";
+			this.toolTip.SetToolTip(this.textBox5, resources.GetString("textBox5.ToolTip"));
 			// 
 			// textBox6
 			// 
 			resources.ApplyResources(this.textBox6, "textBox6");
 			this.textBox6.Name = "textBox6";
+			this.toolTip.SetToolTip(this.textBox6, resources.GetString("textBox6.ToolTip"));
 			// 
 			// textBox7
 			// 
 			resources.ApplyResources(this.textBox7, "textBox7");
 			this.textBox7.Name = "textBox7";
+			this.toolTip.SetToolTip(this.textBox7, resources.GetString("textBox7.ToolTip"));
 			// 
 			// textBox8
 			// 
 			resources.ApplyResources(this.textBox8, "textBox8");
 			this.textBox8.Name = "textBox8";
+			this.toolTip.SetToolTip(this.textBox8, resources.GetString("textBox8.ToolTip"));
 			// 
 			// numericUpDown12
 			// 
@@ -776,6 +829,7 @@
             0,
             0});
 			this.numericUpDown12.Name = "numericUpDown12";
+			this.toolTip.SetToolTip(this.numericUpDown12, resources.GetString("numericUpDown12.ToolTip"));
 			this.numericUpDown12.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// numericUpDown13
@@ -792,6 +846,7 @@
             0,
             0});
 			this.numericUpDown13.Name = "numericUpDown13";
+			this.toolTip.SetToolTip(this.numericUpDown13, resources.GetString("numericUpDown13.ToolTip"));
 			this.numericUpDown13.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// numericUpDown14
@@ -808,6 +863,7 @@
             0,
             0});
 			this.numericUpDown14.Name = "numericUpDown14";
+			this.toolTip.SetToolTip(this.numericUpDown14, resources.GetString("numericUpDown14.ToolTip"));
 			this.numericUpDown14.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// numericUpDown16
@@ -824,6 +880,7 @@
             0,
             0});
 			this.numericUpDown16.Name = "numericUpDown16";
+			this.toolTip.SetToolTip(this.numericUpDown16, resources.GetString("numericUpDown16.ToolTip"));
 			this.numericUpDown16.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// numericUpDown17
@@ -840,6 +897,7 @@
             0,
             0});
 			this.numericUpDown17.Name = "numericUpDown17";
+			this.toolTip.SetToolTip(this.numericUpDown17, resources.GetString("numericUpDown17.ToolTip"));
 			this.numericUpDown17.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// numericUpDown18
@@ -856,12 +914,14 @@
             0,
             0});
 			this.numericUpDown18.Name = "numericUpDown18";
+			this.toolTip.SetToolTip(this.numericUpDown18, resources.GetString("numericUpDown18.ToolTip"));
 			this.numericUpDown18.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// textBox9
 			// 
 			resources.ApplyResources(this.textBox9, "textBox9");
 			this.textBox9.Name = "textBox9";
+			this.toolTip.SetToolTip(this.textBox9, resources.GetString("textBox9.ToolTip"));
 			// 
 			// numericUpDown19
 			// 
@@ -877,17 +937,20 @@
             0,
             0});
 			this.numericUpDown19.Name = "numericUpDown19";
+			this.toolTip.SetToolTip(this.numericUpDown19, resources.GetString("numericUpDown19.ToolTip"));
 			this.numericUpDown19.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// label22
 			// 
 			resources.ApplyResources(this.label22, "label22");
 			this.label22.Name = "label22";
+			this.toolTip.SetToolTip(this.label22, resources.GetString("label22.ToolTip"));
 			// 
 			// checkBox2
 			// 
 			resources.ApplyResources(this.checkBox2, "checkBox2");
 			this.checkBox2.Name = "checkBox2";
+			this.toolTip.SetToolTip(this.checkBox2, resources.GetString("checkBox2.ToolTip"));
 			this.checkBox2.UseVisualStyleBackColor = true;
 			this.checkBox2.CheckedChanged += new System.EventHandler(this.playerEnabled);
 			// 
@@ -895,6 +958,7 @@
 			// 
 			resources.ApplyResources(this.checkBox3, "checkBox3");
 			this.checkBox3.Name = "checkBox3";
+			this.toolTip.SetToolTip(this.checkBox3, resources.GetString("checkBox3.ToolTip"));
 			this.checkBox3.UseVisualStyleBackColor = true;
 			this.checkBox3.CheckedChanged += new System.EventHandler(this.playerEnabled);
 			// 
@@ -902,6 +966,7 @@
 			// 
 			resources.ApplyResources(this.checkBox4, "checkBox4");
 			this.checkBox4.Name = "checkBox4";
+			this.toolTip.SetToolTip(this.checkBox4, resources.GetString("checkBox4.ToolTip"));
 			this.checkBox4.UseVisualStyleBackColor = true;
 			this.checkBox4.CheckedChanged += new System.EventHandler(this.playerEnabled);
 			// 
@@ -909,6 +974,7 @@
 			// 
 			resources.ApplyResources(this.checkBox5, "checkBox5");
 			this.checkBox5.Name = "checkBox5";
+			this.toolTip.SetToolTip(this.checkBox5, resources.GetString("checkBox5.ToolTip"));
 			this.checkBox5.UseVisualStyleBackColor = true;
 			this.checkBox5.CheckedChanged += new System.EventHandler(this.playerEnabled);
 			// 
@@ -916,6 +982,7 @@
 			// 
 			resources.ApplyResources(this.checkBox6, "checkBox6");
 			this.checkBox6.Name = "checkBox6";
+			this.toolTip.SetToolTip(this.checkBox6, resources.GetString("checkBox6.ToolTip"));
 			this.checkBox6.UseVisualStyleBackColor = true;
 			this.checkBox6.CheckedChanged += new System.EventHandler(this.playerEnabled);
 			// 
@@ -923,6 +990,7 @@
 			// 
 			resources.ApplyResources(this.checkBox7, "checkBox7");
 			this.checkBox7.Name = "checkBox7";
+			this.toolTip.SetToolTip(this.checkBox7, resources.GetString("checkBox7.ToolTip"));
 			this.checkBox7.UseVisualStyleBackColor = true;
 			this.checkBox7.CheckedChanged += new System.EventHandler(this.playerEnabled);
 			// 
@@ -930,6 +998,7 @@
 			// 
 			resources.ApplyResources(this.checkBox8, "checkBox8");
 			this.checkBox8.Name = "checkBox8";
+			this.toolTip.SetToolTip(this.checkBox8, resources.GetString("checkBox8.ToolTip"));
 			this.checkBox8.UseVisualStyleBackColor = true;
 			this.checkBox8.CheckedChanged += new System.EventHandler(this.playerEnabled);
 			// 
@@ -937,6 +1006,7 @@
 			// 
 			resources.ApplyResources(this.checkBox9, "checkBox9");
 			this.checkBox9.Name = "checkBox9";
+			this.toolTip.SetToolTip(this.checkBox9, resources.GetString("checkBox9.ToolTip"));
 			this.checkBox9.UseVisualStyleBackColor = true;
 			this.checkBox9.CheckedChanged += new System.EventHandler(this.playerEnabled);
 			// 
@@ -944,6 +1014,7 @@
 			// 
 			resources.ApplyResources(this.checkBox10, "checkBox10");
 			this.checkBox10.Name = "checkBox10";
+			this.toolTip.SetToolTip(this.checkBox10, resources.GetString("checkBox10.ToolTip"));
 			this.checkBox10.UseVisualStyleBackColor = true;
 			this.checkBox10.CheckedChanged += new System.EventHandler(this.playerEnabled);
 			// 
@@ -951,6 +1022,7 @@
 			// 
 			resources.ApplyResources(this.checkBox11, "checkBox11");
 			this.checkBox11.Name = "checkBox11";
+			this.toolTip.SetToolTip(this.checkBox11, resources.GetString("checkBox11.ToolTip"));
 			this.checkBox11.UseVisualStyleBackColor = true;
 			this.checkBox11.CheckedChanged += new System.EventHandler(this.playerEnabled);
 			// 
@@ -968,12 +1040,14 @@
             0,
             0});
 			this.numericUpDown1.Name = "numericUpDown1";
+			this.toolTip.SetToolTip(this.numericUpDown1, resources.GetString("numericUpDown1.ToolTip"));
 			this.numericUpDown1.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// checkBox1
 			// 
 			resources.ApplyResources(this.checkBox1, "checkBox1");
 			this.checkBox1.Name = "checkBox1";
+			this.toolTip.SetToolTip(this.checkBox1, resources.GetString("checkBox1.ToolTip"));
 			this.checkBox1.UseVisualStyleBackColor = true;
 			// 
 			// numericUpDown3
@@ -990,12 +1064,14 @@
             0,
             0});
 			this.numericUpDown3.Name = "numericUpDown3";
+			this.toolTip.SetToolTip(this.numericUpDown3, resources.GetString("numericUpDown3.ToolTip"));
 			this.numericUpDown3.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// checkBox12
 			// 
 			resources.ApplyResources(this.checkBox12, "checkBox12");
 			this.checkBox12.Name = "checkBox12";
+			this.toolTip.SetToolTip(this.checkBox12, resources.GetString("checkBox12.ToolTip"));
 			this.checkBox12.UseVisualStyleBackColor = true;
 			// 
 			// numericUpDown5
@@ -1012,12 +1088,14 @@
             0,
             0});
 			this.numericUpDown5.Name = "numericUpDown5";
+			this.toolTip.SetToolTip(this.numericUpDown5, resources.GetString("numericUpDown5.ToolTip"));
 			this.numericUpDown5.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// checkBox13
 			// 
 			resources.ApplyResources(this.checkBox13, "checkBox13");
 			this.checkBox13.Name = "checkBox13";
+			this.toolTip.SetToolTip(this.checkBox13, resources.GetString("checkBox13.ToolTip"));
 			this.checkBox13.UseVisualStyleBackColor = true;
 			// 
 			// numericUpDown7
@@ -1034,12 +1112,14 @@
             0,
             0});
 			this.numericUpDown7.Name = "numericUpDown7";
+			this.toolTip.SetToolTip(this.numericUpDown7, resources.GetString("numericUpDown7.ToolTip"));
 			this.numericUpDown7.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// checkBox14
 			// 
 			resources.ApplyResources(this.checkBox14, "checkBox14");
 			this.checkBox14.Name = "checkBox14";
+			this.toolTip.SetToolTip(this.checkBox14, resources.GetString("checkBox14.ToolTip"));
 			this.checkBox14.UseVisualStyleBackColor = true;
 			// 
 			// numericUpDown20
@@ -1056,12 +1136,14 @@
             0,
             0});
 			this.numericUpDown20.Name = "numericUpDown20";
+			this.toolTip.SetToolTip(this.numericUpDown20, resources.GetString("numericUpDown20.ToolTip"));
 			this.numericUpDown20.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// checkBox20
 			// 
 			resources.ApplyResources(this.checkBox20, "checkBox20");
 			this.checkBox20.Name = "checkBox20";
+			this.toolTip.SetToolTip(this.checkBox20, resources.GetString("checkBox20.ToolTip"));
 			this.checkBox20.UseVisualStyleBackColor = true;
 			// 
 			// numericUpDown11
@@ -1078,12 +1160,14 @@
             0,
             0});
 			this.numericUpDown11.Name = "numericUpDown11";
+			this.toolTip.SetToolTip(this.numericUpDown11, resources.GetString("numericUpDown11.ToolTip"));
 			this.numericUpDown11.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// checkBox18
 			// 
 			resources.ApplyResources(this.checkBox18, "checkBox18");
 			this.checkBox18.Name = "checkBox18";
+			this.toolTip.SetToolTip(this.checkBox18, resources.GetString("checkBox18.ToolTip"));
 			this.checkBox18.UseVisualStyleBackColor = true;
 			// 
 			// numericUpDown9
@@ -1100,12 +1184,14 @@
             0,
             0});
 			this.numericUpDown9.Name = "numericUpDown9";
+			this.toolTip.SetToolTip(this.numericUpDown9, resources.GetString("numericUpDown9.ToolTip"));
 			this.numericUpDown9.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// checkBox16
 			// 
 			resources.ApplyResources(this.checkBox16, "checkBox16");
 			this.checkBox16.Name = "checkBox16";
+			this.toolTip.SetToolTip(this.checkBox16, resources.GetString("checkBox16.ToolTip"));
 			this.checkBox16.UseVisualStyleBackColor = true;
 			// 
 			// numericUpDown8
@@ -1122,12 +1208,14 @@
             0,
             0});
 			this.numericUpDown8.Name = "numericUpDown8";
+			this.toolTip.SetToolTip(this.numericUpDown8, resources.GetString("numericUpDown8.ToolTip"));
 			this.numericUpDown8.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// checkBox15
 			// 
 			resources.ApplyResources(this.checkBox15, "checkBox15");
 			this.checkBox15.Name = "checkBox15";
+			this.toolTip.SetToolTip(this.checkBox15, resources.GetString("checkBox15.ToolTip"));
 			this.checkBox15.UseVisualStyleBackColor = true;
 			// 
 			// numericUpDown10
@@ -1144,20 +1232,23 @@
             0,
             0});
 			this.numericUpDown10.Name = "numericUpDown10";
+			this.toolTip.SetToolTip(this.numericUpDown10, resources.GetString("numericUpDown10.ToolTip"));
 			this.numericUpDown10.ValueChanged += new System.EventHandler(this.playerPriceChanged);
 			// 
 			// checkBox17
 			// 
 			resources.ApplyResources(this.checkBox17, "checkBox17");
 			this.checkBox17.Name = "checkBox17";
+			this.toolTip.SetToolTip(this.checkBox17, resources.GetString("checkBox17.ToolTip"));
 			this.checkBox17.UseVisualStyleBackColor = true;
 			// 
 			// statsTabPage
 			// 
+			resources.ApplyResources(this.statsTabPage, "statsTabPage");
 			this.statsTabPage.BackColor = System.Drawing.SystemColors.Control;
 			this.statsTabPage.Controls.Add(this.tableLayoutPanel1);
-			resources.ApplyResources(this.statsTabPage, "statsTabPage");
 			this.statsTabPage.Name = "statsTabPage";
+			this.toolTip.SetToolTip(this.statsTabPage, resources.GetString("statsTabPage.ToolTip"));
 			// 
 			// tableLayoutPanel1
 			// 
@@ -1177,97 +1268,116 @@
 			this.tableLayoutPanel1.Controls.Add(this.searchTimeLabel, 1, 6);
 			this.tableLayoutPanel1.Controls.Add(this.currentPlayerLabel, 1, 5);
 			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+			this.toolTip.SetToolTip(this.tableLayoutPanel1, resources.GetString("tableLayoutPanel1.ToolTip"));
 			// 
 			// playersLostLabel
 			// 
 			resources.ApplyResources(this.playersLostLabel, "playersLostLabel");
 			this.playersLostLabel.Name = "playersLostLabel";
+			this.toolTip.SetToolTip(this.playersLostLabel, resources.GetString("playersLostLabel.ToolTip"));
 			// 
 			// label29
 			// 
 			resources.ApplyResources(this.label29, "label29");
 			this.label29.Name = "label29";
+			this.toolTip.SetToolTip(this.label29, resources.GetString("label29.ToolTip"));
 			// 
 			// playersBoughtLabel
 			// 
 			resources.ApplyResources(this.playersBoughtLabel, "playersBoughtLabel");
 			this.playersBoughtLabel.Name = "playersBoughtLabel";
+			this.toolTip.SetToolTip(this.playersBoughtLabel, resources.GetString("playersBoughtLabel.ToolTip"));
 			// 
 			// label27
 			// 
 			resources.ApplyResources(this.label27, "label27");
 			this.label27.Name = "label27";
+			this.toolTip.SetToolTip(this.label27, resources.GetString("label27.ToolTip"));
 			// 
 			// playersFoundLabel
 			// 
 			resources.ApplyResources(this.playersFoundLabel, "playersFoundLabel");
 			this.playersFoundLabel.Name = "playersFoundLabel";
+			this.toolTip.SetToolTip(this.playersFoundLabel, resources.GetString("playersFoundLabel.ToolTip"));
 			// 
 			// label4
 			// 
 			resources.ApplyResources(this.label4, "label4");
 			this.label4.Name = "label4";
+			this.toolTip.SetToolTip(this.label4, resources.GetString("label4.ToolTip"));
 			// 
 			// label23
 			// 
 			resources.ApplyResources(this.label23, "label23");
 			this.label23.Name = "label23";
+			this.toolTip.SetToolTip(this.label23, resources.GetString("label23.ToolTip"));
 			// 
 			// currentActionLabel
 			// 
 			resources.ApplyResources(this.currentActionLabel, "currentActionLabel");
 			this.currentActionLabel.Name = "currentActionLabel";
+			this.toolTip.SetToolTip(this.currentActionLabel, resources.GetString("currentActionLabel.ToolTip"));
 			// 
 			// label6
 			// 
 			resources.ApplyResources(this.label6, "label6");
 			this.label6.Name = "label6";
+			this.toolTip.SetToolTip(this.label6, resources.GetString("label6.ToolTip"));
 			// 
 			// remainingAttemptsStatsText
 			// 
 			resources.ApplyResources(this.remainingAttemptsStatsText, "remainingAttemptsStatsText");
 			this.remainingAttemptsStatsText.Name = "remainingAttemptsStatsText";
+			this.toolTip.SetToolTip(this.remainingAttemptsStatsText, resources.GetString("remainingAttemptsStatsText.ToolTip"));
 			// 
 			// label32
 			// 
 			resources.ApplyResources(this.label32, "label32");
 			this.label32.Name = "label32";
+			this.toolTip.SetToolTip(this.label32, resources.GetString("label32.ToolTip"));
 			// 
 			// label31
 			// 
 			resources.ApplyResources(this.label31, "label31");
 			this.label31.Name = "label31";
+			this.toolTip.SetToolTip(this.label31, resources.GetString("label31.ToolTip"));
 			// 
 			// searchTimeLabel
 			// 
 			resources.ApplyResources(this.searchTimeLabel, "searchTimeLabel");
 			this.searchTimeLabel.Name = "searchTimeLabel";
+			this.toolTip.SetToolTip(this.searchTimeLabel, resources.GetString("searchTimeLabel.ToolTip"));
 			// 
 			// currentPlayerLabel
 			// 
 			resources.ApplyResources(this.currentPlayerLabel, "currentPlayerLabel");
 			this.currentPlayerLabel.Name = "currentPlayerLabel";
+			this.toolTip.SetToolTip(this.currentPlayerLabel, resources.GetString("currentPlayerLabel.ToolTip"));
 			// 
 			// tabPage1
 			// 
+			resources.ApplyResources(this.tabPage1, "tabPage1");
 			this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
 			this.tabPage1.Controls.Add(this.label37);
 			this.tabPage1.Controls.Add(this.label26);
-			resources.ApplyResources(this.tabPage1, "tabPage1");
 			this.tabPage1.Name = "tabPage1";
+			this.toolTip.SetToolTip(this.tabPage1, resources.GetString("tabPage1.ToolTip"));
 			// 
 			// label37
 			// 
 			resources.ApplyResources(this.label37, "label37");
 			this.label37.Name = "label37";
+			this.toolTip.SetToolTip(this.label37, resources.GetString("label37.ToolTip"));
 			// 
 			// label26
 			// 
 			resources.ApplyResources(this.label26, "label26");
 			this.label26.Name = "label26";
+			this.toolTip.SetToolTip(this.label26, resources.GetString("label26.ToolTip"));
 			// 
 			// loginTabPage
 			// 
+			resources.ApplyResources(this.loginTabPage, "loginTabPage");
 			this.loginTabPage.BackColor = System.Drawing.SystemColors.Control;
 			this.loginTabPage.Controls.Add(this.logoutButton);
 			this.loginTabPage.Controls.Add(this.loginStatusLabel);
@@ -1276,13 +1386,14 @@
 			this.loginTabPage.Controls.Add(this.signUpButton);
 			this.loginTabPage.Controls.Add(this.label28);
 			this.loginTabPage.Controls.Add(this.label7);
-			resources.ApplyResources(this.loginTabPage, "loginTabPage");
 			this.loginTabPage.Name = "loginTabPage";
+			this.toolTip.SetToolTip(this.loginTabPage, resources.GetString("loginTabPage.ToolTip"));
 			// 
 			// logoutButton
 			// 
 			resources.ApplyResources(this.logoutButton, "logoutButton");
 			this.logoutButton.Name = "logoutButton";
+			this.toolTip.SetToolTip(this.logoutButton, resources.GetString("logoutButton.ToolTip"));
 			this.logoutButton.UseVisualStyleBackColor = true;
 			this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
 			// 
@@ -1290,33 +1401,38 @@
 			// 
 			resources.ApplyResources(this.loginStatusLabel, "loginStatusLabel");
 			this.loginStatusLabel.Name = "loginStatusLabel";
+			this.toolTip.SetToolTip(this.loginStatusLabel, resources.GetString("loginStatusLabel.ToolTip"));
 			// 
 			// label34
 			// 
 			resources.ApplyResources(this.label34, "label34");
 			this.label34.Name = "label34";
+			this.toolTip.SetToolTip(this.label34, resources.GetString("label34.ToolTip"));
 			// 
 			// loginPanel
 			// 
+			resources.ApplyResources(this.loginPanel, "loginPanel");
 			this.loginPanel.Controls.Add(this.loginPasswordTextBox);
 			this.loginPanel.Controls.Add(this.loginButton);
 			this.loginPanel.Controls.Add(this.label30);
 			this.loginPanel.Controls.Add(this.loginEmailTextBox);
 			this.loginPanel.Controls.Add(this.label33);
-			resources.ApplyResources(this.loginPanel, "loginPanel");
 			this.loginPanel.Name = "loginPanel";
 			this.loginPanel.TabStop = false;
+			this.toolTip.SetToolTip(this.loginPanel, resources.GetString("loginPanel.ToolTip"));
 			// 
 			// loginPasswordTextBox
 			// 
 			resources.ApplyResources(this.loginPasswordTextBox, "loginPasswordTextBox");
 			this.loginPasswordTextBox.Name = "loginPasswordTextBox";
 			this.loginPasswordTextBox.PasswordChar = '●';
+			this.toolTip.SetToolTip(this.loginPasswordTextBox, resources.GetString("loginPasswordTextBox.ToolTip"));
 			// 
 			// loginButton
 			// 
 			resources.ApplyResources(this.loginButton, "loginButton");
 			this.loginButton.Name = "loginButton";
+			this.toolTip.SetToolTip(this.loginButton, resources.GetString("loginButton.ToolTip"));
 			this.loginButton.UseVisualStyleBackColor = true;
 			this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
 			// 
@@ -1324,21 +1440,25 @@
 			// 
 			resources.ApplyResources(this.label30, "label30");
 			this.label30.Name = "label30";
+			this.toolTip.SetToolTip(this.label30, resources.GetString("label30.ToolTip"));
 			// 
 			// loginEmailTextBox
 			// 
 			resources.ApplyResources(this.loginEmailTextBox, "loginEmailTextBox");
 			this.loginEmailTextBox.Name = "loginEmailTextBox";
+			this.toolTip.SetToolTip(this.loginEmailTextBox, resources.GetString("loginEmailTextBox.ToolTip"));
 			// 
 			// label33
 			// 
 			resources.ApplyResources(this.label33, "label33");
 			this.label33.Name = "label33";
+			this.toolTip.SetToolTip(this.label33, resources.GetString("label33.ToolTip"));
 			// 
 			// signUpButton
 			// 
 			resources.ApplyResources(this.signUpButton, "signUpButton");
 			this.signUpButton.Name = "signUpButton";
+			this.toolTip.SetToolTip(this.signUpButton, resources.GetString("signUpButton.ToolTip"));
 			this.signUpButton.UseVisualStyleBackColor = true;
 			this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
 			// 
@@ -1346,41 +1466,48 @@
 			// 
 			resources.ApplyResources(this.label28, "label28");
 			this.label28.Name = "label28";
+			this.toolTip.SetToolTip(this.label28, resources.GetString("label28.ToolTip"));
 			// 
 			// label7
 			// 
 			resources.ApplyResources(this.label7, "label7");
 			this.label7.Name = "label7";
+			this.toolTip.SetToolTip(this.label7, resources.GetString("label7.ToolTip"));
 			// 
 			// updateLogTabPage
 			// 
+			resources.ApplyResources(this.updateLogTabPage, "updateLogTabPage");
 			this.updateLogTabPage.BackColor = System.Drawing.SystemColors.Control;
 			this.updateLogTabPage.Controls.Add(this.label36);
-			resources.ApplyResources(this.updateLogTabPage, "updateLogTabPage");
 			this.updateLogTabPage.Name = "updateLogTabPage";
+			this.toolTip.SetToolTip(this.updateLogTabPage, resources.GetString("updateLogTabPage.ToolTip"));
 			// 
 			// label36
 			// 
 			resources.ApplyResources(this.label36, "label36");
 			this.label36.Name = "label36";
+			this.toolTip.SetToolTip(this.label36, resources.GetString("label36.ToolTip"));
 			// 
 			// manualUpdateLinkLabel
 			// 
 			resources.ApplyResources(this.manualUpdateLinkLabel, "manualUpdateLinkLabel");
 			this.manualUpdateLinkLabel.Name = "manualUpdateLinkLabel";
 			this.manualUpdateLinkLabel.TabStop = true;
+			this.toolTip.SetToolTip(this.manualUpdateLinkLabel, resources.GetString("manualUpdateLinkLabel.ToolTip"));
 			this.manualUpdateLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ManualUpdate_LinkClicked);
 			// 
 			// bundleVersionLabel
 			// 
 			resources.ApplyResources(this.bundleVersionLabel, "bundleVersionLabel");
 			this.bundleVersionLabel.Name = "bundleVersionLabel";
+			this.toolTip.SetToolTip(this.bundleVersionLabel, resources.GetString("bundleVersionLabel.ToolTip"));
 			// 
 			// facebookLinkLabel
 			// 
 			resources.ApplyResources(this.facebookLinkLabel, "facebookLinkLabel");
 			this.facebookLinkLabel.Name = "facebookLinkLabel";
 			this.facebookLinkLabel.TabStop = true;
+			this.toolTip.SetToolTip(this.facebookLinkLabel, resources.GetString("facebookLinkLabel.ToolTip"));
 			this.facebookLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.facebookLinkLabel_LinkClicked);
 			// 
 			// siteLinkLabel
@@ -1388,23 +1515,26 @@
 			resources.ApplyResources(this.siteLinkLabel, "siteLinkLabel");
 			this.siteLinkLabel.Name = "siteLinkLabel";
 			this.siteLinkLabel.TabStop = true;
+			this.toolTip.SetToolTip(this.siteLinkLabel, resources.GetString("siteLinkLabel.ToolTip"));
 			this.siteLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.siteLinkLabel_LinkClicked);
 			// 
 			// flowLayoutPanel1
 			// 
+			resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
 			this.flowLayoutPanel1.Controls.Add(this.facebookLinkLabel);
 			this.flowLayoutPanel1.Controls.Add(this.siteLinkLabel);
 			this.flowLayoutPanel1.Controls.Add(this.webAppLinkLabel);
 			this.flowLayoutPanel1.Controls.Add(this.manualUpdateLinkLabel);
 			this.flowLayoutPanel1.Controls.Add(this.donateLabel);
-			resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
 			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+			this.toolTip.SetToolTip(this.flowLayoutPanel1, resources.GetString("flowLayoutPanel1.ToolTip"));
 			// 
 			// webAppLinkLabel
 			// 
 			resources.ApplyResources(this.webAppLinkLabel, "webAppLinkLabel");
 			this.webAppLinkLabel.Name = "webAppLinkLabel";
 			this.webAppLinkLabel.TabStop = true;
+			this.toolTip.SetToolTip(this.webAppLinkLabel, resources.GetString("webAppLinkLabel.ToolTip"));
 			this.webAppLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.webAppLinkLabel_LinkClicked);
 			// 
 			// donateLabel
@@ -1412,6 +1542,7 @@
 			resources.ApplyResources(this.donateLabel, "donateLabel");
 			this.donateLabel.Name = "donateLabel";
 			this.donateLabel.TabStop = true;
+			this.toolTip.SetToolTip(this.donateLabel, resources.GetString("donateLabel.ToolTip"));
 			this.donateLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.donateLabel_LinkClicked);
 			// 
 			// statsBW
@@ -1430,6 +1561,7 @@
 			this.Controls.Add(this.mainTabControl);
 			this.MaximizeBox = false;
 			this.Name = "Form1";
+			this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
 			this.TopMost = true;
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
 			this.Load += new System.EventHandler(this.Form1_Load);

@@ -130,8 +130,14 @@
   <data name="pauseCheckBox.Text" xml:space="preserve">
     <value>Wait</value>
   </data>
+  <data name="pauseCheckBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="pauseSecondsNumericBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>59, 96</value>
+  </data>
+  <data name="pauseSecondsNumericBox.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="usePlayerListCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>244, 17</value>
@@ -148,11 +154,17 @@
   <data name="label1.Text" xml:space="preserve">
     <value>sec every</value>
   </data>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 13</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>seconds between every search</value>
+  </data>
+  <data name="label8.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>201, 99</value>
@@ -163,8 +175,17 @@
   <data name="label2.Text" xml:space="preserve">
     <value>attempts</value>
   </data>
+  <data name="label2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="delayBeforeNextSearchNumericBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="pauseAttemptsNumericBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>160, 96</value>
+  </data>
+  <data name="pauseAttemptsNumericBox.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 13</value>
@@ -172,11 +193,26 @@
   <data name="label5.Text" xml:space="preserve">
     <value>Attempts ( 0 = endless )</value>
   </data>
+  <data name="label5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="attemptsNumericBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="settingsGroupBox.Text" xml:space="preserve">
     <value>Search</value>
   </data>
+  <data name="settingsGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Commands</value>
+  </data>
+  <data name="groupBox1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
     <value>348, 10</value>
@@ -232,17 +268,20 @@
   <data name="button1.Text" xml:space="preserve">
     <value>gianni</value>
   </data>
-  <data name="mainTabControl.Padding" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="button1.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="optionTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>422, 339</value>
+  <data name="languageEngRadioButton.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="optionTabPage.Text" xml:space="preserve">
-    <value>Settings</value>
+  <data name="languageItaRadioButton.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="groupBox3.Text" xml:space="preserve">
     <value>Language</value>
+  </data>
+  <data name="groupBox3.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 13</value>
@@ -250,8 +289,14 @@
   <data name="label24.Text" xml:space="preserve">
     <value>Resolution:</value>
   </data>
+  <data name="label24.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="screenResolutionLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>69, 6</value>
+  </data>
+  <data name="screenResolutionLabel.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
     <value>105, 6</value>
@@ -262,11 +307,17 @@
   <data name="label25.Text" xml:space="preserve">
     <value>Ratio:</value>
   </data>
+  <data name="label25.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="screenRatioLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>146, 6</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>After purchase</value>
+  <data name="screenRatioLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tableLayoutPanel3.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="sendToTransferListRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 17</value>
@@ -274,23 +325,230 @@
   <data name="sendToTransferListRadioButton.Text" xml:space="preserve">
     <value>Send to transfer list</value>
   </data>
+  <data name="sendToTransferListRadioButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="sellPlayersRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 17</value>
   </data>
   <data name="sellPlayersRadioButton.Text" xml:space="preserve">
     <value>Sell ( use "Player" list price )</value>
   </data>
+  <data name="sellPlayersRadioButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>After purchase</value>
+  </data>
+  <data name="groupBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="optionTabPage.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="optionTabPage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="loadPlayersButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="savePlayersButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox19.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox10.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown15.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label21.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label20.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label19.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label18.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label17.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label16.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label15.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label14.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown12.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown14.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown16.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown17.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown18.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown19.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label22.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox10.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox12.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox14.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown20.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox20.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox18.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox16.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox15.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="numericUpDown10.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox17.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="playersTablePanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="playersGridPage.Text" xml:space="preserve">
     <value>Players</value>
   </data>
-  <data name="statsTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>422, 339</value>
-  </data>
-  <data name="statsTabPage.Text" xml:space="preserve">
-    <value>Statistics</value>
+  <data name="playersGridPage.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="playersLostLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 80</value>
+  </data>
+  <data name="playersLostLabel.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 13</value>
@@ -298,8 +556,14 @@
   <data name="label29.Text" xml:space="preserve">
     <value>Players lost:</value>
   </data>
+  <data name="label29.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="playersBoughtLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 60</value>
+  </data>
+  <data name="playersBoughtLabel.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 13</value>
@@ -307,8 +571,14 @@
   <data name="label27.Text" xml:space="preserve">
     <value>Players bought:</value>
   </data>
+  <data name="label27.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="playersFoundLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 41</value>
+  </data>
+  <data name="playersFoundLabel.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 13</value>
@@ -316,11 +586,17 @@
   <data name="label4.Text" xml:space="preserve">
     <value>Players found:</value>
   </data>
+  <data name="label4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 13</value>
   </data>
   <data name="label23.Text" xml:space="preserve">
     <value>Current action:</value>
+  </data>
+  <data name="label23.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="currentActionLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 3</value>
@@ -331,14 +607,23 @@
   <data name="currentActionLabel.Text" xml:space="preserve">
     <value>Waiting</value>
   </data>
+  <data name="currentActionLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 13</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>Remaining attempts:</value>
   </data>
+  <data name="label6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="remainingAttemptsStatsText.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 22</value>
+  </data>
+  <data name="remainingAttemptsStatsText.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 13</value>
@@ -346,23 +631,38 @@
   <data name="label32.Text" xml:space="preserve">
     <value>Search time:</value>
   </data>
+  <data name="label32.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 13</value>
   </data>
   <data name="label31.Text" xml:space="preserve">
     <value>Current Player:</value>
   </data>
+  <data name="label31.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="searchTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 120</value>
+  </data>
+  <data name="searchTimeLabel.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="currentPlayerLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 100</value>
   </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>422, 339</value>
+  <data name="currentPlayerLabel.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Instructions</value>
+  <data name="tableLayoutPanel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="statsTabPage.Text" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="statsTabPage.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label37.Text" xml:space="preserve">
     <value>- Compile players list
@@ -381,11 +681,26 @@
 
 - To stop searching press Ctrl + S again</value>
   </data>
-  <data name="loginTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>422, 339</value>
+  <data name="label37.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label26.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Instructions</value>
+  </data>
+  <data name="tabPage1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logoutButton.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="loginStatusLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>152, 256</value>
+  </data>
+  <data name="loginStatusLabel.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
@@ -393,8 +708,29 @@
   <data name="label34.Text" xml:space="preserve">
     <value>Status:</value>
   </data>
+  <data name="label34.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="loginPasswordTextBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="loginButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label30.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="loginEmailTextBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label33.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="loginPanel.Text" xml:space="preserve">
     <value>Login here</value>
+  </data>
+  <data name="loginPanel.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="signUpButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>338, 52</value>
@@ -402,18 +738,27 @@
   <data name="signUpButton.Text" xml:space="preserve">
     <value>Register</value>
   </data>
+  <data name="signUpButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
     <value>325, 26</value>
   </data>
   <data name="label28.Text" xml:space="preserve">
     <value>If you do not have an account you can create one by clicking here:
-(To create an account you have to buy a code for 5€)</value>
+(To create an account you have to buy a code for 10€)</value>
+  </data>
+  <data name="label28.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>To use the program you need to login with your account's data ( account created on our site, NOT Fifa account).</value>
   </data>
-  <data name="updateLogTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>422, 339</value>
+  <data name="label7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="loginTabPage.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 65</value>
@@ -425,6 +770,18 @@
 - English language
 - Fixed Logout problems</value>
   </data>
+  <data name="label36.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="updateLogTabPage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mainTabControl.Padding" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="mainTabControl.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="manualUpdateLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>216, 0</value>
   </data>
@@ -434,11 +791,20 @@
   <data name="manualUpdateLinkLabel.Text" xml:space="preserve">
     <value>Download last version</value>
   </data>
+  <data name="manualUpdateLinkLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bundleVersionLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="facebookLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 13</value>
   </data>
   <data name="facebookLinkLabel.Text" xml:space="preserve">
     <value>Facebook Page</value>
+  </data>
+  <data name="facebookLinkLabel.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="siteLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>92, 0</value>
@@ -449,11 +815,23 @@
   <data name="siteLinkLabel.Text" xml:space="preserve">
     <value>Official Site</value>
   </data>
+  <data name="siteLinkLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="webAppLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>158, 0</value>
   </data>
+  <data name="webAppLinkLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="donateLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>333, 0</value>
+  </data>
+  <data name="donateLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="flowLayoutPanel1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2120,5 +2498,8 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAA
 </value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
 </root>
